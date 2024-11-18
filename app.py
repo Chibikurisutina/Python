@@ -5,7 +5,7 @@
 #4. Função que finaliza o app se for escolhida opção 4;
 
 import os #importar biblioteca de funcionalidades que são dependentes de sistema operacional
-
+#dicionário
 restaurantes = [{'nome':'DandanDan', 'categoria':'Italiana','ativo':False},
                 {'nome':'Bebop','categoria':'Fusion','ativo':True},
                 {'nome':'Nana Cafe','categoria':'Café','ativo':False}]
@@ -16,7 +16,7 @@ def exibir_nome_do_programa():
     print("""
     SABOR EXPRESS
     """)
-
+#menu
 def exibir_opcoes():
     print('1. Cadastrar Restaurante')
     print('2. Listar Restaurante')
@@ -76,7 +76,7 @@ def escolher_opcoes():
         opcao_invalida()
 
 def main():
-    os.system('cls')
+    os.system('cls') #limpa
     exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcoes()
